@@ -1,0 +1,13 @@
+package com.kw.Ddareungi;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class DdareungiApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
