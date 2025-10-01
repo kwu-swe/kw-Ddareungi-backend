@@ -1,8 +1,9 @@
 package com.kw.Ddareungi.api.common.dto;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.my_medi.common.exception.BaseCode;
-import com.my_medi.common.exception.SuccessStatus;
+
+import com.kw.Ddareungi.common.exception.BaseCode;
+import com.kw.Ddareungi.common.exception.SuccessStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

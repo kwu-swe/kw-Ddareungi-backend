@@ -1,8 +1,10 @@
 package com.kw.Ddareungi.api.common.advice;
 
 
-import ch.qos.logback.core.status.ErrorStatus;
 import com.kw.Ddareungi.api.common.dto.ApiResponseDto;
+import com.kw.Ddareungi.common.exception.ErrorStatus;
+import com.kw.Ddareungi.common.exception.GeneralException;
+import com.kw.Ddareungi.common.exception.Reason;
 import io.swagger.v3.oas.annotations.Hidden;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
@@ -62,7 +64,6 @@ public class ExceptionAdvice extends ResponseEntityExceptionHandler {
         e.printStackTrace();
 
 
-        discordWebhookService.sendErrorMessage(e, request);
 
         return handleExceptionInternalFalse(e, ErrorStatus._INTERNAL_SERVER_ERROR, HttpHeaders.EMPTY,
                 ErrorStatus._INTERNAL_SERVER_ERROR.getHttpStatus(), request, e.getMessage());
