@@ -40,7 +40,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_KEY }}
           script: |
-            cd ~/my_medi_main
+            cd ~/ddareungi_main
 
             if [ ! -f .env ]; then
               echo "❌ .env 파일이 존재하지 않아 배포를 중단합니다."

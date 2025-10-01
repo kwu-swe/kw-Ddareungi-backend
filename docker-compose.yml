@@ -1,0 +1,21 @@
+services:
+  application:
+    container_name: ddareungi-service
+    build: .
+    ports:
+      - "8080:8080"
+    env_file: .env
+    networks:
+      - ddareungi-net
+#  ### REDIS ###
+#  redis_medi:
+#    image: redis
+#    container_name: my-medi-redis
+#    ports:
+#      - "6379:6379"
+#    networks:
+#      - ddareungi-net
+
+
+networks:
+  ddareungi-net:
